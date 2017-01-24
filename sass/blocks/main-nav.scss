@@ -1,0 +1,73 @@
+.main-nav {
+  float: right;
+  margin-top: 15px;
+}
+
+.main-nav__items {
+  font-family: RobotoMedium;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin-left: 45px;
+}
+
+.main-nav__item a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: #fb565a;
+  }
+
+  &:active {
+    color: #ababab;
+  }
+}
+
+.main-nav__item--active {
+  position: relative;
+  background-color: none;
+}
+
+.main-nav__item--active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.main-nav__item--active span {
+  display: block;
+  font-weight: 500;
+}
+
+.icon {
+  display: inline-block;
+  background: url("../img/sprite.png") no-repeat;
+}
+
+.icon.icon-basket {
+  width: 16px;
+  height: 16px;
+  background-position: 0 0;
+  margin-right: 8px;
+  vertical-align: sub;
+}
+
+.main-nav--basket {
+  margin-left: 15px;
+}
+
+.main-nav--basket:hover > .icon-basket {
+  background-position: 0 -22px;
+}
