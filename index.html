@@ -7,66 +7,173 @@
   </head>
   <body>
     <header class="main-header container">
+      <a class="main-header__logo" href="index.html"><img width="142" height="57"  src="img/logo.png" alt="Логотип"></a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="#">Студия</a></li>
+          <li class="main-nav__item"><a href="#">Клиенты</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Магазин</a></li>
+          <li class="main-nav__item"><a href="#">Контакты</a></li>
+          <li class="main-nav__item"><a class="main-nav--basket" href="#"><span class="icon icon-basket"></span> Корзина</a></li>
+        </ul>
+      </nav>
 
-        <a class="main-header__logo" href="index.html"><img width="142" height="57"  src="img/logo.png" alt="Логотип"></a>
-        <nav class="main-nav">
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="#">Студия</a></li>
-            <li class="main-nav__item"><a href="#">Клиенты</a></li>
-            <li class="main-nav__item"><a href="catalog.html">Магазин</a></li>
-            <li class="main-nav__item"><a href="#">Контакты</a></li>
-            <li class="main-nav__item"><a class="main-nav--basket" href="#"><span class="icon icon-basket"></span> Корзина</a></li>
-          </ul>
-        </nav>
+      <div class="slider">
+        <input class="slider__input" type="radio" id="btn-1" name="toggle" checked>
+        <input class="slider__input" type="radio" id="btn-2" name="toggle">
+        <input class="slider__input" type="radio" id="btn-3" name="toggle">
+        <div class="slider--controls">
+          <label class="slider__label" for="btn-1"></label>
+          <label class="slider__label" for="btn-2"></label>
+          <label class="slider__label" for="btn-3"></label>
+        </div>
 
-        <div class="slider">
-          <input class="slider__input" type="radio" id="btn-1" name="toggle" checked>
-          <input class="slider__input" type="radio" id="btn-2" name="toggle">
-          <input class="slider__input" type="radio" id="btn-3" name="toggle">
-          <div class="slider--controls">
-            <label class="slider__label" for="btn-1"></label>
-            <label class="slider__label" for="btn-2"></label>
-            <label class="slider__label" for="btn-3"></label>
+        <div class="slides">
+          <div class="slides__item">
+            <div class="slides__item-text">
+              <div class="slides__item-headline">Долго, дорого,<br> скрупулезно</div>
+              <p>Математически выверенный дизайн<br>
+                для вашего сайта или мобильного приложения.
+              </p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
           </div>
 
-          <div class="slides">
-            <div class="slides__item">
-              <div class="slides__item-text">
-                <div class="slides__item-headline">Долго, дорого,<br> скрупулезно</div>
-                <p>Математически выверенный дизайн<br>
-                  для вашего сайта или мобильного приложения.
-                </p>
-                <a class="btn" href="#">Узнать больше</a>
+          <div class="slides__item">
+            <div class="slides__item-text">
+              <div class="slides__item-headline">Любите ли вы математику,<br>
+                как любим ее мы?
               </div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>
+                за креатив, чтобы дать им возможность все просчитать.
+              </p>
+              <a class="btn" href="#">Узнать больше</a>
             </div>
+          </div>
 
-            <div class="slides__item">
-              <div class="slides__item-text">
-                <div class="slides__item-headline">Любите ли вы математику,<br>
-                  как любим ее мы?
-                </div>
-                <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>
-                  за креатив, чтобы дать им возможность все просчитать.
-                </p>
-                <a class="btn" href="#">Узнать больше</a>
+          <div class="slides__item">
+            <div class="slides__item-text">
+              <div class="slides__item-headline">Только наркотики,<br>
+                только хардкор
               </div>
-            </div>
-
-            <div class="slides__item">
-              <div class="slides__item-text">
-                <div class="slides__item-headline">Только наркотики,<br>
-                  только хардкор
-                </div>
-                <p>Все дизайнерские решения в нашей компании принимаются<br>
-                  только под воздействием качественных галлюциногенов.
-                </p>
-                <a class="btn" href="#">Узнать больше</a>
-              </div>
+              <p>Все дизайнерские решения в нашей компании принимаются<br>
+                только под воздействием качественных галлюциногенов.
+              </p>
+              <a class="btn" href="#">Узнать больше</a>
             </div>
           </div>
         </div>
-
+      </div>
     </header>
 
+    <main class="main-page-content container">
+      <div class="services">
+        <div class="services__item">
+          <img class="services__item-img-1" width="240" height="125" src="img/sites.png" alt="Веб-сайты">
+          <h3 class="services__item-headline">Вeб-сайты</h3>
+          <p class="services__item-text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+          <a class="services__item-order-1">Заказать</a>
+        </div>
+
+        <div class="services__item">
+          <img class="services__item-img-2" width="240" height="125" src="img/applications.png" alt="Приложения">
+          <h3 class="services__item-headline">Приложения</h3>
+          <p class="services__item-text">Покорите топ-10 приложений в AppStore и Google Play!</p>
+          <a class="services__item-order-2">Заказать</a>
+        </div>
+
+        <div class="services__item">
+          <img class="services__item-img-3" width="240" height="125" src="img/presentations.png" alt="Прeзентации">
+          <h3 class="services__item-headline">Презентации</h3>
+          <p class="services__item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="services__item-order-3">Заказать</a>
+        </div>
+      </div>
+
+      <hr class="line">
+
+      <div class="about">
+        <div class="about__left">
+          <h2 class="about__left-headline">Мы — маленькая, но гордая<br>
+            дизайн-студия из Краснодара.
+          </h2>
+          <p class="about__left-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="about__left-orders">Выполняем заказы на разработку:</p>
+          <ul class="about__left-list">
+            <li class="about__left-list-item"><span class="list-line"></span>Веб-сайтов любой сложности</li>
+            <li class="about__left-list-item"><span class="list-line"></span>Мобильных приложений для iOS и Android</li>
+            <li class="about__left-list-item"><span class="list-line"></span>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+
+        <div class="about__right">
+          <img class="about__right-logo" width="185" height="73" src="img/logo2.png" alt="Логотип">
+          <div class="about-_right-title-border">
+            <div class="about__right-title-border--line"></div>
+            <div class="about__right-title-border--content">Since 2004</div>
+          </div>
+          <p class="about__right-work">Как мы работаем:</p>
+          <ul class="about__right-list">
+            <li class="about__right-list-item"><span class="list-line"></span>С самоотдачей 146%</li>
+            <li class="about__right-list-item"><span class="list-line"></span>Соблюдая сроки на 100%</li>
+            <li class="about__right-list-item"><span class="list-line"></span>По предоплате 50%</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="line">
+
+      <div class="partners">
+        <a class="partners__item-1" href="#"><img width="198" height="37" src="img/partner1.png" alt="Glukhanko"></a>
+        <a class="partners__item-2" href="#"><img width="199" height="68" src="img/partner2.png" alt="HTML Academy"></a>
+        <a class="partners__item-3" href="#"><img width="209" height="90" src="img/partner3.png" alt="Borodinski"></a>
+      </div>
+
+      <hr class="line">
+    </main>
+
+    <div class="location">
+      <div class="container">
+        <div class="contacts">
+          <p class="contacts__headline">Nёrds design studio</p>
+          <p class="contacts__address">191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="contacts__telephone">тел. +7 (812) 275-75-75</p>
+          <button class="write">Напишите нам</button>
+        </div>
+
+        <div class="modal-content">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+          <form class="modal-form" action="index.html" method="post">
+            <label class="modal-form-name">Ваше имя:<br>
+              <input type="text" name="firstname" placeholder="Представьтесь, пожалуйста"></label>
+            <label class="modal-form-email">Ваш e-mail:<br>
+              <input type="text" name="email" placeholder="Для отправки ответа"></label>
+            <label class="modal-form-message">Текст письма:<br>
+              <textarea rows="6" name="textarea" placeholder="В свободной форме"></textarea></label>
+            <input class="send" type="submit" value="Отправить">
+          </form>
+        </div>
+        <img class="modal-content__logo" width="166" height="190" src="img/logo3.png" alt="Логотип">
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="main-footer__social">
+          <a class="main-footer__social-vk" href="#"><img class="vk-image" width="26" height="15" src="img/vk.png" alt="VKontakte"></a>
+          <a class="main-footer__social-fb" href="#"><img class="fb-image" width="12" height="22" src="img/fb.png" alt="Facebook"></a>
+          <a class="main-footer__social-insta" href="#"><img class="insta-image" width="21" height="21" src="img/insta.png" alt="Instagram"></a>
+        </div>
+
+        <div class="offer">
+          <h1 class="offer__headline">Давайте дружить, это выгодно!</h1>
+          <p class="offer__text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+
+  <script src="js/script.min.js"></script>
   </body>
 </html>
